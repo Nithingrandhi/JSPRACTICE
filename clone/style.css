@@ -1,0 +1,30 @@
+.navclass{
+    height: 60px;
+    padding: 0,20px;
+    position: sticky;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgb(134, 50, 130);
+    top: 0px;
+}
+.items{
+
+    padding-left: 200px;
+    padding-top: 20px;
+    color: white;
+}
+.docs{
+    padding-right: 20px;
+}
+.examples{
+    padding-right: 20px;
+}
+.icons{
+    padding-right: 20px;
+}
+.themes{
+    padding-right: 20px;
+}
+.blog{
+    padding-right: 20px;
+}

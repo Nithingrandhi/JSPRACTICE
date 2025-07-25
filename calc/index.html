@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Amount Adding Agent</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+    }
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ccc;
+      text-align: center;
+    }
+    input, button {
+      padding: 10px;
+      margin: 5px;
+      font-size: 16px;
+    }
+    #amountList {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Amount Adding Agent</h2>
+    <input type="number" id="amountInput" placeholder="Enter amount" />
+    <button onclick="addAmount()">Add</button>
+    <button onclick="calculateTotal()">Total</button>
+
+    <div id="amountList"></div>
+    <h3 id="totalDisplay">Total: ₹0</h3>
+  </div>
+
+  <script>
+    let amounts = [];
+
+    function addAmount() {
+      const input = document.getElementById("amountInput");
+      const value = parseFloat(input.value);
+      if (!isNaN(value)) {
+        amounts.push(value);
+        updateAmountList();
+        input.value = "";
+      } else {
+        alert("Please enter a valid number.");
+      }
+    }
+
+    function calculateTotal() {
+      const total = amounts.reduce((acc, val) => acc + val, 0);
+      document.getElementById("totalDisplay").innerText = `Total: ₹${total}`;
+    }
+
+    function updateAmountList() {
+      const listDiv = document.getElementById("amountList");
+      listDiv.innerHTML = "Amounts: " + amounts.join(", ");
+    }
+  </script>
+
+</body>
+</html>

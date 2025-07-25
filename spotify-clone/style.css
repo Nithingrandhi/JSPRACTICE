@@ -1,0 +1,124 @@
+body {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.desc {
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.signupto, .listen {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+.form {
+    background-color: #121212;
+    border: solid #121212;
+    border-radius: 10px;
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0);
+}
+.emailaddress {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.input-field input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    font-size: 14px;
+}
+.phone {
+    padding-top: 10px;
+    font-size: 13px;
+}
+.phone a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.phone a:hover {
+    text-decoration: underline;
+}
+.next-bt {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.next-bt button {
+    width: 100%;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.next-bt button:hover {
+    background-color: #17a34a;
+}
+.form p {
+    text-align: center;
+    color: white;
+    margin: 15px 0;
+}
+.google, .apple {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.google button,
+.apple button {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.google button {
+    background-color: black;
+    color:white;
+}
+
+.apple button {
+    background-color: black;
+    color: white;
+}
+.login {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login label {
+    color: white;
+}
+
+.login a {
+    color: #1DB954;
+    text-decoration: none;
+}
+
+.login a:hover {
+    text-decoration: underline;
+}
